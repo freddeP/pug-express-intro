@@ -16,4 +16,6 @@ const names = ["Lenny","Jane", "Benny", "Sören", "Jens-Peter"];
 
 app.get('/', (req, res) => {res.render('index', { title: 'Express PUG', names })});
 
+app.get('/contact', (req, res) => {res.render('contact', { title: 'Contact'})});
+
 app.listen(2400,()=>{console.log("port: "+2400)});
